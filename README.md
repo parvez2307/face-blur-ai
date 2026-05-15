@@ -2,7 +2,33 @@
 
 Privacy-first AI face blur tool running entirely locally in your browser.
 
+---
+
+# Table of Contents
+
+* [Live Demo](#live-demo)
+* [Features](#features)
+* [Privacy First](#privacy-first)
+* [Screenshots](#screenshots)
+* [Tech Stack](#tech-stack)
+* [AI Pipeline](#ai-pipeline)
+* [Tracking Engine](#tracking-engine)
+* [Performance Optimizations](#performance-optimizations)
+* [Supported Devices](#supported-devices)
+* [Installation](#installation)
+* [Production Build](#production-build)
+* [Deployment](#deployment)
+* [Current Limitations](#current-limitations)
+* [Future Improvements](#future-improvements)
+* [Phase 2 — Selective Person Blur](#phase-2--selective-person-blur)
+* [Why This Project Exists](#why-this-project-exists)
+* [License](#license)
+* [Author](#author)
+
 ## Live Demo
+
+Add your deployed Vercel URL here:
+
 ```text
 https://face-blur-ai-five.vercel.app
 ```
@@ -55,6 +81,13 @@ This application does not use cloud inference or backend video processing.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/eb76e7cf-c2b3-474f-a358-84b1be7abd18" width="50%" />
+</p>
+
+
+## Demo Preview
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/70d9fcec-9345-4401-8ea9-1c428a5e2f22" width="100%" />
 </p>
 
 ---
