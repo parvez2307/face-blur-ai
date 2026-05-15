@@ -3,9 +3,6 @@
 Privacy-first AI face blur tool running entirely locally in your browser.
 
 ## Live Demo
-
-Add your deployed Vercel URL here:
-
 ```text
 https://face-blur-ai-five.vercel.app
 ```
@@ -47,8 +44,6 @@ This application does not use cloud inference or backend video processing.
 ---
 
 # Screenshots
-
-Add screenshots here later.
 
 ## Upload Screen
 
