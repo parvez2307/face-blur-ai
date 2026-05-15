@@ -83,18 +83,6 @@ This application does not use cloud inference or backend video processing.
   <img src="https://github.com/user-attachments/assets/eb76e7cf-c2b3-474f-a358-84b1be7abd18" width="50%" />
 </p>
 
-
-## Demo Preview
-
-<p align="center">
-  <video
-    src="https://github.com/user-attachments/assets/70d9fcec-9345-4401-8ea9-1c428a5e2f22"
-    controls
-    width="100%"
-  >
-  </video>
-</p>
-
 ---
 
 # Tech Stack
