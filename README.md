@@ -86,10 +86,13 @@ This application does not use cloud inference or backend video processing.
 
 ## Demo Preview
 
-[<p align="center">
-  <img src="https://github.com/user-attachments/assets/70d9fcec-9345-4401-8ea9-1c428a5e2f22" width="100%" />
-</p>](https://github.com/user-attachments/assets/70d9fcec-9345-4401-8ea9-1c428a5e2f22)
-
+<p align="center">
+  <img
+    src="https://github.com/user-attachments/assets/70d9fcec-9345-4401-8ea9-1c428a5e2f22"
+    width="100%"
+    alt="Face Blur AI Demo"
+  />
+</p>
 ---
 
 # Tech Stack
