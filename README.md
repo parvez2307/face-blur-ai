@@ -1,40 +1,358 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Face Blur AI
 
-## Getting Started
+Privacy-first AI face blur tool running entirely locally in your browser.
 
-First, run the development server:
+## Live Demo
+
+Add your deployed Vercel URL here:
+
+```text
+https://your-app.vercel.app
+```
+
+---
+
+# Features
+
+* Fully local video processing
+* No uploads to cloud
+* AI-powered face detection
+* Real-time face blur
+* Adaptive tracking engine
+* Mobile optimized
+* Browser-based processing
+* Adjustable blur strength
+* Circle and square blur modes
+* Adjustable privacy coverage
+* Export processed video
+* Download processed output
+* FPS optimization
+* Safe mode for low-end devices
+* Responsive UI
+
+---
+
+# Privacy First
+
+All processing happens entirely in your browser.
+
+Your videos are:
+
+* never uploaded
+* never stored
+* never sent to servers
+
+This application does not use cloud inference or backend video processing.
+
+---
+
+# Screenshots
+
+Add screenshots here later.
+
+## Upload Screen
+
+```text
+screenshot
+<img width="1685" height="743" alt="image" src="https://github.com/user-attachments/assets/96ffc4a7-57f3-4cb4-8c6b-5a0ce29921a6" />
+
+```
+
+## Processing Screen
+
+```text
+screenshot
+<img width="1247" height="790" alt="image" src="https://github.com/user-attachments/assets/eb76e7cf-c2b3-474f-a358-84b1be7abd18" />
+
+```
+
+---
+
+# Tech Stack
+
+| Layer        | Technology                |
+| ------------ | ------------------------- |
+| Frontend     | Next.js                   |
+| Styling      | Tailwind CSS              |
+| AI Detection | MediaPipe Face Landmarker |
+| Tracking     | Custom centroid tracker   |
+| Rendering    | HTML5 Canvas              |
+| Export       | MediaRecorder API         |
+| Runtime      | Browser-only              |
+| Deployment   | Vercel                    |
+
+---
+
+# AI Pipeline
+
+```text
+Video Upload
+      ↓
+Adaptive Detection Resolution
+      ↓
+MediaPipe Face Detection
+      ↓
+Tracking + Motion Prediction
+      ↓
+Blur Engine
+      ↓
+Canvas Rendering
+      ↓
+Video Export
+```
+
+---
+
+# Tracking Engine
+
+The application uses:
+
+* centroid tracking
+* motion prediction
+* face persistence
+* confidence decay
+* adaptive detection frequency
+
+This improves:
+
+* blur continuity
+* partial face handling
+* motion stability
+* performance efficiency
+
+---
+
+# Performance Optimizations
+
+## Adaptive Detection
+
+Detection frequency automatically changes based on:
+
+* FPS
+* motion speed
+* device capability
+* safe mode activation
+
+---
+
+## Low Resolution Inference
+
+Face detection runs on a smaller detection canvas while blur is applied to the original-resolution frame.
+
+This significantly improves:
+
+* FPS
+* battery usage
+* mobile performance
+
+---
+
+## Safe Mode
+
+On weaker devices, the application automatically:
+
+* reduces detection frequency
+* lowers detection resolution
+* prioritizes stable FPS
+
+---
+
+# Supported Devices
+
+## Desktop
+
+* Chrome
+* Edge
+* Brave
+* Firefox
+
+## Mobile
+
+* Android Chrome
+* Samsung Internet
+* iPhone Safari
+
+---
+
+# Installation
+
+## Clone Repository
+
+```bash
+git clone https://github.com/parvez2307/face-blur-ai.git
+cd face-blur-ai
+```
+
+---
+
+## Install Dependencies
+
+```bash
+npm install
+```
+
+---
+
+## Run Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+# Production Build
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+npm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Deployment
 
-## Deploy on Vercel
+Recommended deployment:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* Vercel
+* Cloudflare Pages
+* Netlify
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
-# face-blur-ai
->>>>>>> 42e30f741eccf99861e9942779f76e7e2ab912bf
+---
+
+# Current Limitations
+
+* WebM export only
+* MP4 export not yet implemented
+* MediaPipe may miss extremely occluded faces
+* Browser performance varies by device
+
+---
+
+# Future Improvements
+
+## Phase 2 — Selective Person Blur
+
+Planned upgrade:
+
+```text
+Selective Identity-Aware Blur
+```
+
+Instead of blurring every detected face, users will be able to:
+
+* select a specific person
+* blur only selected individuals
+* maintain identity persistence across frames
+* handle motion and partial occlusion more reliably
+
+This phase requires a significantly more advanced AI pipeline.
+
+### Planned Architecture
+
+```text
+Face Detection
+      ↓
+Tracking
+      ↓
+Face Embeddings
+      ↓
+Identity Matching
+      ↓
+Selective Blur
+```
+
+### Planned Technology Stack
+
+| Component         | Planned Upgrade          |
+| ----------------- | ------------------------ |
+| Detection         | SCRFD                    |
+| Tracking          | ByteTrack-style tracking |
+| Identity Matching | Face Embeddings          |
+| Embedding Models  | ArcFace / MobileFaceNet  |
+| Runtime           | ONNX Runtime Web         |
+| Acceleration      | WebGPU                   |
+
+### Planned Features
+
+* selective person blur
+* persistent face IDs
+* better partial-face handling
+* side-profile stability
+* re-identification after occlusion
+* improved tracking continuity
+* adaptive high-accuracy mode
+
+### Engineering Challenges
+
+This phase introduces:
+
+* identity persistence
+* embedding similarity matching
+* re-identification logic
+* advanced multi-object tracking
+* browser inference optimization
+
+The application evolves from:
+
+```text
+privacy utility
+```
+
+into:
+
+```text
+browser-native video analytics system
+```
+
+---
+
+## Planned
+
+* SCRFD integration
+* WebGPU acceleration
+* MP4 export
+* ffmpeg.wasm pipeline
+* Web Worker inference
+* Optical flow tracking
+* Multi-face identity persistence
+* Selective face blur
+
+---
+
+# Why This Project Exists
+
+Most online face blur tools upload videos to servers.
+
+This project was built to provide:
+
+* local-first privacy
+* browser-native AI processing
+* mobile-friendly performance
+* accessible privacy tooling
+
+without requiring cloud uploads.
+
+---
+
+# License
+
+MIT License
+
+---
+
+# Author
+
+Parvez
+
+GitHub:
+
+```text
+https://github.com/parvez2307
+```
