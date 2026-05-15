@@ -47,19 +47,15 @@ This application does not use cloud inference or backend video processing.
 
 ## Upload Screen
 
-```text
-screenshot
-<img width="1685" height="743" alt="image" src="https://github.com/user-attachments/assets/96ffc4a7-57f3-4cb4-8c6b-5a0ce29921a6" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/96ffc4a7-57f3-4cb4-8c6b-5a0ce29921a6" width="100%" />
+</p>
 
-```
+## Processing
 
-## Processing Screen
-
-```text
-screenshot
-<img width="1247" height="790" alt="image" src="https://github.com/user-attachments/assets/eb76e7cf-c2b3-474f-a358-84b1be7abd18" />
-
-```
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/eb76e7cf-c2b3-474f-a358-84b1be7abd18" width="100%" />
+</p>
 
 ---
 
